@@ -27,7 +27,7 @@ find_library(QUARTZ_CORE QuartzCore)
 #set_target_properties(DebugGUI PROPERTIES COMPILE_FLAGS "-fobjc-arc")
 set(MACOS_FRAMEWORKS ${METAL} ${CF} ${FOUNDATION} ${QUARTZ_CORE})
 
-add_executable(imgui-sample main.mm ${BACKEND})
+add_executable(imgui-sample SampleGui.mm ${BACKEND})
 
 target_compile_features(imgui-sample PUBLIC cxx_std_17)
 
